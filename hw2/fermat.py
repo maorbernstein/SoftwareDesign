@@ -5,7 +5,7 @@ def check_fermat(a,b,c,n):
 	else:
         	print "No that doesn't work."
     else:
-        print 'Suck a dick, n is less than 2. Fuck yourself.'
+        print "Don't cheat!"
 
 def fermat():
     print 'Enter the four numbers neccessary for a fermat test.'
