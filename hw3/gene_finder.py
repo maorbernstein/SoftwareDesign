@@ -68,8 +68,8 @@ def complement(letter):
         return "A"
    if letter=="G":
         return "C"
-   return ""
-    
+   return 
+
 def get_reverse_complement(dna):
     """ Computes the reverse complementary sequence of DNA for the specfied DNA
         sequence
@@ -94,7 +94,7 @@ def get_reverse_complement_unit_tests():
     print "input: " + x + ", expected output: " + xeo + ", actual output: " + get_reverse_complement(x)
     print "input: " + y + ", expected output: " + yeo + ", actual output: " + get_reverse_complement(y)
     print "input: " + z + ", expected output: " + zeo + ", actual output: " + get_reverse_complement(z)    
-       
+    
 
 def rest_of_ORF(dna):
     """ Takes a DNA sequence that is assumed to begin with a start codon and returns
@@ -115,6 +115,7 @@ def rest_of_ORF(dna):
                     break
         out = out + dna[i]
     return out
+
 def rest_of_ORF_unit_tests():
     """ Unit tests for the rest_of_ORF function """
         
@@ -127,6 +128,7 @@ def rest_of_ORF_unit_tests():
     print "input: " + x + ", expected output: " + xeo + ", actual output: " + get_reverse_complement(x)
     print "input: " + y + ", expected output: " + yeo + ", actual output: " + get_reverse_complement(y)
     print "input: " + z + ", expected output: " + zeo + ", actual output: " + get_reverse_complement(z)    
+
         
 def find_all_ORFs_oneframe(dna):
     """ Finds all non-nested open reading frames in the given DNA sequence and returns
@@ -138,7 +140,8 @@ def find_all_ORFs_oneframe(dna):
         dna: a DNA sequence
         returns: a list of non-nested ORFs
     """
-            
+     
+    # YOUR IMPLEMENTATION HERE        
      
 def find_all_ORFs_oneframe_unit_tests():
     """ Unit tests for the find_all_ORFs_oneframe function """
@@ -210,3 +213,5 @@ def gene_finder(dna, threshold):
     """
 
     # YOUR IMPLEMENTATION HERE
+
+    
