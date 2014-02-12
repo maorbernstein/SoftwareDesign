@@ -1,0 +1,5 @@
+The first strand appears to be ATPSynthase SpaL
+The second strand appears to needle length control protein
+The third strand appears to type 3 secretion protein
+The fourth strand appears to be a type 3 secretion protein SpaO
+The fifth strand appears to be a type 3 secretion protein SpaS
