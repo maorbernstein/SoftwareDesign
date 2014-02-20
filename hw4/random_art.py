@@ -55,8 +55,6 @@ def remap_interval(val, input_interval_start, input_interval_end, output_interva
     """ Maps the input value that is in the interval [input_interval_start, input_interval_end]
         to the output interval [output_interval_start, output_interval_end].  The mapping
         is an affine one (i.e. output = input*c + b).
-    
-        TODO: please fill out the rest of this docstring
     """
     input_interval_start = float(input_interval_start)
     input_interval_end = float(input_interval_end)
@@ -67,6 +65,10 @@ def remap_interval(val, input_interval_start, input_interval_end, output_interva
     return (val - input_interval_start)* del2/del1 + output_interval_start
 
 def drawing_build(sizex,sizey,min_depth,max_depth,number):
+	""" This function takes as an input the size of the canvas sizex,sizey, and the the min and max depth
+	of the function, and the image number. It's output is an image in the python folder that is computer generated 
+	using the attached function.
+	"""
 	sizex = int(sizex)
 	sizey = int(sizey)
 	red = build_random_function(min_depth,max_depth)
@@ -86,4 +88,3 @@ def drawing_build(sizex,sizey,min_depth,max_depth,number):
 			im.putpixel((i,j),(int(rmap),int(gmap),int(bmap)))
 	im.save("image" + str(number) + ".bmp")			
     
-drawing_build(1600,900,3,15,2)
